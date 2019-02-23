@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+<title>Tweet Fetch App</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="{% static 'css/search.css' %}">
+
+</head>
+<body>
+<div class = 'bg'>
+<div class="header">
+<section align = 'left'>
+<img src="{% static "images/logo.png" %}" alt="Tweet Fetch App" width = '60px' height = '60px' /><span>&nbsp&nbsp<h>Tweet Fetch App</h><span>
+</section>
+<div class = "center">
+<div class="wrap">
+<div class="search">
+<form method = 'POST'>
+{% csrf_token %}
+{{ form.Twitter_Handle}}
+<button class = "searchButton" type = 'submit'>Submit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<section>
+<div class="w3-container" align ='center'>
+<ul class = "w3-ul w3-hoverable" style="width:100%">
+{% if tweets %}
+{% for v in tweets %}
+<li>{{ v }}</li>
+{% endfor %}
+</ul>
+{% endif %}
+</div>
+</section>
+<div class = 'footer' align = 'center'>
+<a href="https://github.com/SanthoshKR93/tweet_fetch_app.git"><img src="{% static "images/git.png" %}" alt="Tweet Fetch App" width = '40px' height = '40px' /></a>
+</div>
+</body>
+</html>

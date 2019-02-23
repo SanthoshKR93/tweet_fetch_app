@@ -1,0 +1,91 @@
+.center {
+  padding: 40px 0;
+  border: 0px solid green;
+  text-align: center;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.bg {
+background: #191919;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 35px;
+  text-align: center;
+  color: f4f4f4;
+  font-size: 25px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  width: 100%;
+  border: 3px solid #1abc9c;
+  padding: 5px;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  position: absolute;  
+  right: -100px;
+  top: -2px;
+  width: 90px;
+  height: 37px;
+  border: 1px solid #00B4CC;
+  background: #2587bc;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 27%;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+}
+
+
+.footer {
+background-color: #191919;
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: center;
+font: normal 18px sans-serif;
+padding: 30px;
+margin-top: 297px;
+
+}
+
